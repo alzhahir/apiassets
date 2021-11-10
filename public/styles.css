@@ -1,0 +1,205 @@
+@font-face {
+    font-family: OpenSans;
+    src: local("Open Sans"), local("OpenSans"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/K88pR3goAWT7BTt32Z01mz8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+body{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0f0f0f;
+    color: white;
+    font-family: OpenSans;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100%;
+    min-height: -webkit-fill-available, -moz-available, fill-available;
+}
+
+.headerBar{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-shrink: 0;
+    top: 0px;
+    box-sizing: border-box;
+    width: 100vw;
+    background-color: #1f1f1f;
+    overflow: auto;
+    padding: 10px;
+    margin: 0px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.alzlogo{
+    height: 50px;
+}
+
+.titletext{
+    padding-left: 5px;
+    font-weight: bolder;
+    font-size: 37px;
+}
+
+/*Spinner CSS code starts*/
+  
+.spinner {
+    vertical-align: baseline;
+    animation: rotator 1.4s linear infinite;
+}
+
+circle{
+    display: inline;
+}
+
+#subjectSpinner{
+    margin: auto;
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+#dateSpinner{
+    margin: auto;
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+#statusSpinner{
+    margin: auto;
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+}
+  
+@keyframes rotator {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(270deg);
+    }
+}
+  
+.path {
+    stroke-dasharray: 187;
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+  
+@keyframes colors {
+    0% {
+      stroke: #4285F4;
+    }
+    25% {
+      stroke: #DE3E35;
+    }
+    50% {
+      stroke: #F7C223;
+    }
+    75% {
+      stroke: #1B9A59;
+    }
+    100% {
+      stroke: #4285F4;
+    }
+}
+  
+@keyframes dash {
+    0% {
+      stroke-dashoffset: 187;
+    }
+    50% {
+      stroke-dashoffset: 46.75;
+      transform: rotate(135deg);
+    }
+    100% {
+      stroke-dashoffset: 187;
+      transform: rotate(450deg);
+    }
+}
+  
+/*Spinner CSS code ends*/
+
+/*Link properties start*/
+.titletext:link{
+    color: white;
+    text-decoration: none;
+}
+
+.titletext:visited{
+    color: white;
+}
+/*Link properties end*/
+
+.contents {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex: 1 0 auto;
+}
+
+.button{
+    background-color: #f0f0f0;
+    color: #202020;
+    padding: 20px;
+}
+
+.footerBar{
+    flex-shrink: 0;
+    box-sizing: border-box;
+    overflow: auto;
+    bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    background-color: #1f1f1f;
+    width: 100vw;
+    margin: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+@media screen and (max-width: 570px){
+    .alzlogo{
+        height: 30px;
+    }
+    .titletext{
+        font-size: 19px;
+    }
+    .contents{
+        font-size: small;
+    }
+    .footerBar{
+        font-size: smaller;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-height: 440px){
+    .alzlogo{
+        height: 30px;
+    }
+    .titletext{
+        font-size: 19px;
+    }
+    .contents{
+        font-size: small;
+    }
+    .footerBar{
+        font-size: smaller;
+        padding: 10px;
+    }
+}
