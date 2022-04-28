@@ -4,7 +4,6 @@
 }
 
 body{
-    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,6 +18,7 @@ body{
 }
 
 .headerBar{
+    position: fixed;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -38,6 +38,7 @@ body{
     margin: 0px;
     -moz-user-select: none;
     -webkit-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
 
@@ -147,6 +148,8 @@ circle{
 .contents {
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 64px;
+    margin-bottom: 20%;
     flex: 1 0 auto;
 }
 
@@ -157,6 +160,7 @@ circle{
 }
 
 .footerBar{
+    position: fixed;
     flex-shrink: 0;
     box-sizing: border-box;
     overflow: auto;
@@ -169,6 +173,7 @@ circle{
     margin: 0;
     -moz-user-select: none;
     -webkit-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
 
@@ -181,6 +186,7 @@ circle{
     }
     .contents{
         font-size: small;
+        margin-top: 50px;
     }
     .footerBar{
         font-size: smaller;
@@ -197,6 +203,7 @@ circle{
     }
     .contents{
         font-size: small;
+        margin-top: 50px;
     }
     .footerBar{
         font-size: smaller;
