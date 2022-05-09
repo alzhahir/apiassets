@@ -1,3 +1,21 @@
+/***********************************************************************************\
+*                                                                                   *
+*           _    _     ______   _    _    _   _ ___ ____    ____ ___  __  __        *
+*          / \  | |   |__  / | | |  / \  | | | |_ _|  _ \  / ___/ _ \|  \/  |       *
+*         / _ \ | |     / /| |_| | / _ \ | |_| || || |_) || |  | | | | |\/| |       *
+*        / ___ \| |___ / /_|  _  |/ ___ \|  _  || ||  _ < | |__| |_| | |  | |       *
+*       /_/   \_\_____/____|_| |_/_/   \_\_| |_|___|_| \_(_)____\___/|_|  |_|       *
+*                                                                                   *
+*                                                                                   *
+*                          alzhahir.com Standard CSS Style.                         *
+*                  For use in productions by Megat Al Zhahir Daniel.                *
+*   Copyright Megat Al Zhahir Daniel. This code is licensed under the GNU GPL v3.   *
+*   I cannot prevent you from using this code anywhere "unethical" but I will say   *
+*   that I will look at you with a squinting eye and a visibly disappointed face.   *
+*                                                                                   *
+*                                                                                   *
+\***********************************************************************************/
+
 @font-face {
     font-family: OpenSans;
     src: local("Open Sans"), local("OpenSans"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/K88pR3goAWT7BTt32Z01mz8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
@@ -63,6 +81,7 @@ circle{
     display: inline;
 }
 
+/*These are code used specifically for sirampokok*/
 #subjectSpinner{
     margin: auto;
     padding: 20px;
@@ -134,7 +153,9 @@ circle{
   
 /*Spinner CSS code ends*/
 
+
 /*Link properties start*/
+
 .titletext:link{
     color: white;
     text-decoration: none;
@@ -143,6 +164,7 @@ circle{
 .titletext:visited{
     color: white;
 }
+
 /*Link properties end*/
 
 .contents {
@@ -176,6 +198,11 @@ circle{
     -ms-user-select: none;
     user-select: none;
 }
+
+/*
+Below are the CSS code for responsive websites. Should work on most screens.
+Tested on a 1080x1920 PC laptop Windows 11 screen with 125% scaling as well as Poco X3 NFC.
+*/
 
 @media screen and (max-width: 570px){
     .alzlogo{
