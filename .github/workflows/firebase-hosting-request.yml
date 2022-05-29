@@ -3,7 +3,7 @@
 
 name: Deploy to Firebase Hosting on Request
 on:
-  workflow-dispatch:
+  workflow_dispatch:
     branches:
       - main
 jobs:
