@@ -244,12 +244,35 @@ Below are the CSS code for responsive websites. Should work on most screens.
 Tested on a 1080x1920 PC laptop Windows 11 screen with 125% scaling as well as Poco X3 NFC.
 */
 
-@media screen and (max-width: 570px){
+@media screen and (max-width: 650px){
+    .headerButton{
+        font-size: 10px;
+    }
     .alzlogo{
         height: 30px;
     }
     .titletext{
         font-size: 19px;
+    }
+    .contents{
+        font-size: small;
+        margin-top: 50px;
+    }
+    .footerBar{
+        font-size: smaller;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .headerButton{
+        font-size: 8px;
+    }
+    .alzlogo{
+        height: 22px;
+    }
+    .titletext{
+        font-size: 13px;
     }
     .contents{
         font-size: small;
