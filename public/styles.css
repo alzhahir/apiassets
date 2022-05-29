@@ -195,7 +195,17 @@ circle{
     color: white;
 }
 
+.pageLink:link{
+    color: #aa3e35;
+    text-decoration: underline;
+}
+
+.pageLink:visited{
+    color: #aa3e35;
+} 
+
 /*Link properties end*/
+
 
 .contents {
     padding-left: 20px;
